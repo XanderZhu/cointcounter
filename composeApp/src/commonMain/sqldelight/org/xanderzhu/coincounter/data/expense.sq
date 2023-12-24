@@ -1,0 +1,15 @@
+CREATE TABLE category (
+    category_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+CREATE TABLE expense (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    amount INTEGER NOT NULL,
+    category_id INTEGER,
+    FOREIGN KEY (category_id) REFERENCES category(category_id)
+);
+
+insert:
+INSERT INTO expense
+VALUES ?;
