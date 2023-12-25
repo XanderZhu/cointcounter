@@ -7,7 +7,5 @@ import org.xanderzhu.coincounter.db.DatabaseDriverFactory
 class DatabaseComponentImpl(
     private val databaseDriverFactory: DatabaseDriverFactory
 ) : DatabaseComponent {
-    override val database: Database by lazy {
-        DatabaseBuilder.createDatabase(databaseDriverFactory)
-    }
+    override val database: Database = DatabaseBuilder.createDatabase(databaseDriverFactory)
 }
