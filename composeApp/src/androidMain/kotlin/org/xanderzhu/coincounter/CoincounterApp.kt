@@ -8,7 +8,7 @@ class CoincounterApp : Application() {
         private var _appGraph: AndroidAppGraph? = null
         val appGraph: AndroidAppGraph
             get() = requireNotNull(_appGraph) {
-                "CoincounterApp is not initilized yet! It is prohibited to access appGraph before Application.onCreate"
+                "CoincounterApp is not initialized yet! It is prohibited to access appGraph before Application.onCreate"
             }
     }
 

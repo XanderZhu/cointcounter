@@ -1,3 +1,5 @@
+package org.xanderzhu.coincounter.ui
+
 class Greeting {
     private val platform = getPlatform()
 

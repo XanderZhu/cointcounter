@@ -1,3 +1,5 @@
+package org.xanderzhu.coincounter.ui
+
 import android.os.Build
 
 class AndroidPlatform {

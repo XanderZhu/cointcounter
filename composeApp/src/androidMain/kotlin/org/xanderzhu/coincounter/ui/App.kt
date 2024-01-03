@@ -1,3 +1,5 @@
+package org.xanderzhu.coincounter.ui
+
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -12,6 +14,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 
@@ -33,4 +36,10 @@ fun App() {
             }
         }
     }
+}
+
+@Preview
+@Composable
+private fun AppAndroidPreview() {
+    App()
 }

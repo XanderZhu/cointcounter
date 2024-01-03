@@ -1,6 +1,6 @@
-package org.xanderzhu.coincounter
+package org.xanderzhu.coincounter.ui
 
-import App
+import org.xanderzhu.coincounter.ui.App
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -15,10 +15,4 @@ class MainActivity : ComponentActivity() {
             App()
         }
     }
-}
-
-@Preview
-@Composable
-fun AppAndroidPreview() {
-    App()
 }
